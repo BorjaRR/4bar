@@ -1,0 +1,43 @@
+$white : #fff;
+$lightblack :#1a1a1a;
+$azulEnlace : #add8e6;
+$amarilloMenu : #f4c031;
+$amarilloLogo : #fea700;
+$postitAmarillo: #ffffcc;
+$postitVerde : #ccffcc;
+
+@mixin formularioBase(){
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: #fff;
+    font-size: 1.2rem;
+    min-width: 100%;
+}
+@mixin formularioBaseBoton(){
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+@mixin estiloInput(){
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+@mixin boton($color){
+    background: none;
+    border: none;
+    color: $color;
+}
+@mixin enlace() {
+    color: $azulEnlace;
+    text-decoration: underline $azulEnlace;
+}
+@mixin enlaceHover() {
+    color : $amarilloLogo;
+    text-decoration: underline $amarilloLogo;
+}

@@ -1,0 +1,400 @@
+ @import "colores";
+
+*{
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 1.1rem;
+}
+body.swal2-shown > [aria-hidden="true"] {
+    transition: 0.1s filter;
+    filter: blur(10px);
+}
+.menu{
+    background-color: $amarilloMenu;
+    min-height: 100vh;
+}
+.pizarra{
+    background-image: url('.././img/pizarra_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.bg-restaurante{
+    background-image: url('.././img/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.corcho{
+    background-image: url('.././img/corcho.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.tx-white{
+    color: $white;
+}
+.tx-black{
+    color: $lightblack;
+}
+
+.titulo{
+    border-bottom: 1px solid $white;
+}
+.infoRest{
+    border-bottom: 1px solid $white;
+}
+.infoRest p{
+    font-size: 1.5rem;
+}
+a{
+    color: $white;
+    text-decoration: none;
+}
+a:hover{
+    color: $white;
+    text-decoration: underline $white;
+}
+#mesa{
+    position: relative;
+}
+.mesa{
+    cursor: pointer;
+}
+.iconos{
+    background-color: rgba(255,255,255,.4);
+    border-radius: 50px;
+    width: 50%;
+    position: absolute;
+    bottom: -1rem;
+    left: 25%;
+}
+.iconos a:hover{
+    text-decoration: none;
+}
+.iconos a i{
+    font-size: 2rem;
+}
+.iconos a i:hover{
+    background-color: rgba(244, 192, 49, .7);
+    border-radius: 50%;
+}
+
+
+/*      ESTILOS DEL MENU        */
+.menu ul {
+    list-style: none;
+    padding-top: 2rem;
+    margin-top: 1rem;
+}
+.menu li{
+    padding:1rem 2rem;
+}
+.menu li:hover{
+    background-color: $amarilloLogo ;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: $lightblack;
+}
+.menu ul li a i{
+    font-size: 1.8rem;
+    padding-right: 2rem;
+}
+.opciones a{
+    text-decoration: none;
+    color: $lightblack;
+}
+.opciones a i{
+    font-size: 5rem;
+}
+/*       FIN MENÚ       */
+
+
+
+/*       FORMULARIO AÑADIR MESA       */
+.formulario *{
+    display: inline-block;
+}
+.formulario input,.formulario select{
+   @include estiloInput();
+    max-width: 20%;
+    display: block;
+}
+.formulario option{
+    color: $lightblack;
+    font-size: .8rem;
+}
+button{
+    @include boton($white);
+}
+/*       FIN FORM       */
+
+
+
+/* TABLA DE PLATOS */
+
+.categorias span{
+    cursor: pointer;
+}
+.categorias .selected{
+    text-decoration: underline $white;
+}
+.tablaPlatos{
+    max-width: 100%;
+}
+.tablaPlatos th{
+    border: none;
+}
+.tablaPlatos th, .tablaPlatos td{
+    padding: .5rem 0;
+}
+.tablaPlatos .bg-blanco{
+    background-color: rgba(255,255,255,.9);
+    color: $lightblack;
+}
+.tablaPlatos .bg-gris{
+    background-color: rgba(255,255,255,.1);
+}
+.tablaPlatos td i{
+    font-size: 1.4rem;
+}
+.num_conf{
+    max-width: 5rem;
+    background-color: transparent;
+    color: $white;
+    border: none;
+    border-bottom: 1px solid $white;
+}
+td.id{
+    width: 2%;
+}
+td.nombre{
+    width: 30%;
+}
+td.categoria{
+    width: 30%;
+}
+td.precio{
+    width: 5%;
+}
+td.eliminar{
+    width: 16%;
+    a:hover{
+        text-decoration: none;
+    }
+}
+td.eliminar form{
+    display: inline;
+}
+
+/*                  */ 
+
+
+/* TABLA DE CUENTAS */
+.tablaCuentasNF{
+    max-width: 70%;
+}
+.tablaCuentas{
+    max-width: 80%;
+}
+.tablaCuentas th, .tablaCuentas td, .tablaCuentasNF th, .tablaCuentasNF td{
+    padding: .5rem 0;
+}
+.tablaCuentas .bg-blanco, .tablaCuentasNF .bg-blanco{
+    background-color: rgba(255,255,255,.9);
+    color: $lightblack;
+}
+.tablaCuentas .bg-gris, .tablaCuentasNF .bg-gris{
+    background-color: rgba(255,255,255,.1);
+}
+.tablaCuentas td a:hover{
+    text-decoration: none;
+}
+.tablaCuentas td a i{
+    font-size: 1.4rem;
+}
+/*                  */ 
+
+
+/* TABLA DE FACTURAS */
+.tablaFacturas{
+    max-width: 100%;
+}
+.tablaFacturas th, .tablaFacturas td{
+    padding: .5rem 0;
+}
+.tablaFacturas .bg-blanco{
+    background-color: rgba(255,255,255,.9);
+    color: $lightblack;
+}
+.tablaFacturas .bg-gris{
+    background-color: rgba(255,255,255,.1);
+}
+.num_factura span{
+    background-color: black;
+    color: white;
+    padding: 0 .5rem;
+}
+.tablaFacturas td a:hover{
+    text-decoration: none;
+}
+.tablaFacturas td i{
+    font-size: 1.4rem;
+    padding: 0 .3rem;
+}
+.acciones{
+    width: 25%;
+}
+/*                  */ 
+
+
+/*      FORM DE NUEVA FACTURA       */
+
+.regFactura{
+    height: 1.8px !important;
+    opacity: .5;
+}
+.nuevaFactura label, .reserva label{
+    display: block;
+    padding-top: 1rem;
+}
+.nuevaFactura input, .nuevaFactura textarea, .reserva input{
+    @include estiloInput();
+}
+.nuevaFactura textarea{
+    border-left: 1px solid $white;
+    display: block;
+}
+/*                                  */
+
+
+
+/*       APARTADO INFORMACIÓN       */
+.informacion{
+    background-color: rgba(0,0,0,.4);
+    margin-top: 6rem;
+}
+.informacion p{
+    font-size: 1.3rem;
+    margin: 0;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+.informacion a{
+    @include enlace();
+}
+.informacion a:hover{
+    @include enlaceHover();
+}
+.formulario_informacion {
+    background-color: rgba(0,0,0,.4);
+    padding: 3rem;
+}
+.formulario_informacion input{
+    @include formularioBase();
+}
+.formulario_informacion button{
+    @include formularioBaseBoton();
+}
+.formulario_informacion input:disabled{
+    opacity: .5;
+}
+/*                                  */
+
+
+/*      VISUALIZACION DE FACTURA        */
+.hojaFactura{
+    background-color: $white;
+    color: $lightblack;
+}
+.bg-gray{
+    background-color: rgb(190, 190, 190);
+}
+.bg-lightgray{
+    background-color: rgb(231, 231, 231);
+}
+.hojaFactura table, .hojaFactura th, .hojaFactura tr, .hojaFactura td{
+    border: 1px solid $lightblack;
+}
+/*                                      */
+
+
+/*          RESERVAS            */
+.mes, .mes i{
+    font-size: 1.5rem;
+}
+.mes a:hover{
+    text-decoration: none;
+}
+.buscarDia{
+    font-size: 1.3rem;
+}
+.buscarDia input{
+    background-color: transparent;
+    color: $white;
+    border: 1px solid $white;
+    font-size: 1rem;
+}
+.postit{
+    color: $lightblack;
+    position: relative;
+}
+.bg-postit-amarillo{
+    background-color: $postitAmarillo;
+}
+.bg-postit-verde{
+    background-color: $postitVerde ;
+}
+.postit p{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.2rem;
+}
+.rotateS{
+    display: inline-block;
+    transform: rotate(-5deg);
+}
+.rotateE{
+    display: inline-block;
+    transform: rotate(5deg);
+}
+.chincheta{
+    position: absolute;
+    width: 50px;
+    top: -1rem;
+    right: .3rem;
+}
+.postit a i{
+    color: $lightblack;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+.nota{
+    position: relative
+}
+.postit.sqr{
+    position: absolute;
+    top: 35%;
+    left: -15px;
+    height: 60px;
+    width: 60px;
+    background-color: $postitAmarillo;
+    display: inline-block;
+    transform: rotate(45deg);
+}
+/*                              */
+
+
+/*          CIERRE DE DÍA       */
+.border-black{
+    border: 1px solid $lightblack;
+}
+
+
+
+
+
+/*                              */

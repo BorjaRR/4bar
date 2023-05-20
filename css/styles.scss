@@ -1,0 +1,51 @@
+@import "colores";
+*{
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 1.1rem;
+}
+body{
+    background-image: url('.././img/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tx-white{
+    color: $white;
+}
+.tx-black{
+    color: $lightblack;
+}
+form{
+    background-color: rgba(0,0,0,.4);
+    padding: 3rem;
+}
+input{
+    @include formularioBase();
+}
+input.pp{
+    min-width: unset;
+}
+button{
+    @include formularioBaseBoton();
+}
+a{
+    @include enlace();
+}
+a:hover{
+    @include enlaceHover();
+}
+
+// POLITICA DE PRIVACIDAD
+.cabecera{
+    background-image: url('.././img/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cabecera .row{
+    min-height: 50vh;
+}
+.cuerpo{
+    background-color: $white;
+    color: $lightblack;
+}

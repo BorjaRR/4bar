@@ -1,0 +1,75 @@
+* {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 1.1rem;
+}
+
+body {
+  background-image: url(".././img/fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tx-white {
+  color: #fff;
+}
+
+.tx-black {
+  color: #1a1a1a;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3rem;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: #fff;
+  font-size: 1.2rem;
+  min-width: 100%;
+}
+
+input.pp {
+  min-width: unset;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+
+a {
+  color: #add8e6;
+  -webkit-text-decoration: underline #add8e6;
+          text-decoration: underline #add8e6;
+}
+
+a:hover {
+  color: #fea700;
+  -webkit-text-decoration: underline #fea700;
+          text-decoration: underline #fea700;
+}
+
+.cabecera {
+  background-image: url(".././img/fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cabecera .row {
+  min-height: 50vh;
+}
+
+.cuerpo {
+  background-color: #fff;
+  color: #1a1a1a;
+}
+/*# sourceMappingURL=styles.css.map */
