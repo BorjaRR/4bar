@@ -4,7 +4,7 @@
 
 The main function of the app is the management of any hostelry business, since the arrival of customers, dishes, reservations, and invoice treatment, all of this to make easier the comunication between all the business team.
 
-# TIEMPO DE DESARROLLO
+# Development time
 4Bar was developed in two months, and finalized in December 21. Nowadays, even though it is ended, a lot of it visual characteristics are in a sooner development phase.
 
 
