@@ -20,8 +20,8 @@ The main function of the app is the management of any hostelry business, since t
 
 
 ## Documentation
-Toda la documentación sobre el proyecto y el desarrollo se puede leer 
-[aquí](https://github.com/BorjaRR/4bar/blob/master/memoria_4BAR.pdf).
+All the documentation about this project and the development might be found
+[here](https://github.com/BorjaRR/4bar/blob/master/memoria_4BAR.pdf).
 
 
 ## Author
