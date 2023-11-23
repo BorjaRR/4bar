@@ -37,7 +37,7 @@ By now, I find myself exploring my back end capabilities, and expanding my knowl
 
 ## Feedback
 
-If you have any feedback, please reach out to me at borjarodriguezruiz.com
+If you have any feedback, please contact me at borjarodriguezruiz@gmail.com
 
 
 ![Logo](https://raw.githubusercontent.com/BorjaRR/4bar/master/img/4bar_logo.png?token=GHSAT0AAAAAACDZYLGVSQFTJUAZVMJQRQZSZHHBZPQ)
